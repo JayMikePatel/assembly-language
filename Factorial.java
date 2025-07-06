@@ -5,23 +5,20 @@
 | Compute N Factorial for N=1 to 50.
 |
 */
-
 public class Factorial {
-	public static void main (String[] args) {
+	public static void main(String[] args) {
 		System.out.println("N\tN!"); // Formatting
 		System.out.println("----+-----");
-		for(int n = 1; n <= 50; n++) { // Loop N=1 to 50
-			int nFact = 1;
-			for(int i = 1; i <= n; i++) { // Calculate N!
-				nFact *= i;
-			}
-			System.out.println(n + "\t" + nFact); // Print N and N!
+		int nFactorial = 1; // Initialize nFactorial
+		for (int n = 1; n <= 50; n++) { // Loop N=1 to 50
+			nFactorial *= n; // Calculate N!
+			System.out.println(n + "\t" + nFactorial); // Print N and N!
 		}
 	}
 }
 
-
-/* The result that my program computes for 50! is incorrect.
+/*
+The result that my program computes for 50! is incorrect.
 It does not compute N! for any N greater than or equal to 13
 because the int variable type does not have enough memory
 volume to store the large size of the numbers. The int
