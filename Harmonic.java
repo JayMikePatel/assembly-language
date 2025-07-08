@@ -1,4 +1,3 @@
-89% of storage used … If you run out, you can't create, edit, and upload files.
 /* CS 254 Program 1
 | Author: Jay Patel
 | Date: 01/26/2024
@@ -44,5 +43,6 @@ public class Harmonic {
 			descDouble += (double) 1.0/i;
 		}
 		System.out.println("downward sum (double) = "+ descDouble);
+		scanner.close();
 	}
 }
